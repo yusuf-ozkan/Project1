@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<Algorithm AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" ReturnType="0" ReturnValueClassName="" BaseType="1" AlgorithmType="1" GUITag="None" ProcessTag="" ActionTag="None">
+	<Description/>
+	<InputValues/>
+	<LinkPoints>
+		<LinkPoint AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" LinkPointIndex="1" AlgorithmNodeID="0" Code="BaseObject" LinkPointType="10" DataType="2" IteratorCode="" SubIteratorCode="None" GroupName="" DirectlyConnectInputLPID="-1" LinkIndex="1" MidX="32" TopY="6" GroupLinkIndex="-1" LPClassName="API_Data_GET" RequiredClassName=""/>
+		<LinkPoint AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" LinkPointIndex="7" AlgorithmNodeID="2" Code="Objects" LinkPointType="9" DataType="1" IteratorCode="" SubIteratorCode="" GroupName="" DirectlyConnectInputLPID="-1" LinkIndex="1" MidX="25" TopY="2" GroupLinkIndex="-1" LPClassName="API_Data_GET" RequiredClassName="ICLOBJECT"/>
+		<LinkPoint AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" LinkPointIndex="12" AlgorithmNodeID="2" Code="ObjectInfo" LinkPointType="10" DataType="1" IteratorCode="" SubIteratorCode="" GroupName="" DirectlyConnectInputLPID="-1" LinkIndex="1" MidX="30" TopY="6" GroupLinkIndex="-1" LPClassName="ObjectInfo" RequiredClassName=""/>
+		<LinkPoint AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" LinkPointIndex="13" AlgorithmNodeID="2" Code="Objects" LinkPointType="10" DataType="1" IteratorCode="" SubIteratorCode="" GroupName="" DirectlyConnectInputLPID="-1" LinkIndex="2" MidX="25" TopY="6" GroupLinkIndex="-1" LPClassName="API_Data_GET" RequiredClassName=""/>
+		<LinkPoint AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" LinkPointIndex="8" AlgorithmNodeID="3" Code="ObjectInfos" LinkPointType="9" DataType="1" IteratorCode="" SubIteratorCode="" GroupName="" DirectlyConnectInputLPID="-1" LinkIndex="1" MidX="32" TopY="2" GroupLinkIndex="-1" LPClassName="ObjectInfo" RequiredClassName="ObjectInfo"/>
+		<LinkPoint AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" LinkPointIndex="14" AlgorithmNodeID="3" Code="ObjectInfos" LinkPointType="10" DataType="1" IteratorCode="" SubIteratorCode="" GroupName="" DirectlyConnectInputLPID="-1" LinkIndex="1" MidX="32" TopY="6" GroupLinkIndex="-1" LPClassName="ObjectInfo" RequiredClassName=""/>
+		<LinkPoint AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" LinkPointIndex="15" AlgorithmNodeID="3" Code="OnError" LinkPointType="10" DataType="2" IteratorCode="" SubIteratorCode="" GroupName="" DirectlyConnectInputLPID="-1" LinkIndex="-99" MidX="0" TopY="-1" GroupLinkIndex="-1" LPClassName="" RequiredClassName=""/>
+		<LinkPoint AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" LinkPointIndex="9" AlgorithmNodeID="4" Code="Err" LinkPointType="5" DataType="2" IteratorCode="" SubIteratorCode="" GroupName="" DirectlyConnectInputLPID="16" LinkIndex="1" MidX="15" TopY="2" GroupLinkIndex="-1" LPClassName="ICLException" RequiredClassName="ICLOBJECT"/>
+		<LinkPoint AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" LinkPointIndex="16" AlgorithmNodeID="4" Code="Err" LinkPointType="6" DataType="2" IteratorCode="" SubIteratorCode="" GroupName="" DirectlyConnectInputLPID="9" LinkIndex="1" MidX="15" TopY="6" GroupLinkIndex="-1" LPClassName="" RequiredClassName=""/>
+		<LinkPoint AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" LinkPointIndex="10" AlgorithmNodeID="5" Code="ObjectInfo" LinkPointType="5" DataType="1" IteratorCode="" SubIteratorCode="" GroupName="" DirectlyConnectInputLPID="17" LinkIndex="1" MidX="30" TopY="2" GroupLinkIndex="-1" LPClassName="ObjectInfo" RequiredClassName="ICLOBJECT"/>
+		<LinkPoint AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" LinkPointIndex="17" AlgorithmNodeID="5" Code="ObjectInfo" LinkPointType="6" DataType="1" IteratorCode="" SubIteratorCode="" GroupName="" DirectlyConnectInputLPID="10" LinkIndex="1" MidX="30" TopY="6" GroupLinkIndex="-1" LPClassName="" RequiredClassName=""/>
+		<LinkPoint AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" LinkPointIndex="11" AlgorithmNodeID="6" Code="Tr" LinkPointType="5" DataType="3" IteratorCode="" SubIteratorCode="" GroupName="" DirectlyConnectInputLPID="-1" LinkIndex="1" MidX="14" TopY="2" GroupLinkIndex="-1" LPClassName="ICLOBJECT" RequiredClassName="ICLOBJECT"/>
+	</LinkPoints>
+	<Nodes>
+		<Node AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" NodeIndex="0" Code="BaseObject" AN_ClassName="" AN_AlgorithmName="" TraceValue="0" L="15" R="175" T="15" B="46" DrawUniqueID="0" ShowLPDescriptions="1" ShowDescription="1" PrevHeight="31">
+			<Description/>
+			<TraceExpression/>
+			<TraceChannel/>
+			<UserParameters><![CDATA[<USER_PARAMETERS><Parameter Code="Group" ClassName="NODE"><Expression Seq="0" Status=""></Expression></Parameter></USER_PARAMETERS>
+]]></UserParameters>
+		</Node>
+		<Node AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" NodeIndex="2" Code="CreateObjectInfo" AN_ClassName="" AN_AlgorithmName="" TraceValue="0" L="73" R="443" T="143" B="243" DrawUniqueID="0" ShowLPDescriptions="1" ShowDescription="1" PrevHeight="31">
+			<Description/>
+			<TraceExpression/>
+			<TraceChannel/>
+			<UserParameters><![CDATA[<USER_PARAMETERS><Parameter Code="Direction" ClassName="NODE"><Expression Seq="0" Status="">ASCENDING</Expression></Parameter><Parameter Code="Expressions" ClassName="NODE" IsEXPList="1"><Expression Seq="0" Status="">IteratedObject.DataClassName</Expression><Expression Seq="1" Status="">IteratedObject.ActiveTransactionID</Expression><Expression Seq="2" Status="">IteratedObject.Last_ACRMReceivedTime</Expression><Expression Seq="3" Status="">TIMENOW</Expression></Parameter><Parameter Code="Parent" ClassName="NODE"><Expression Seq="0" Status=""></Expression></Parameter><Parameter Code="nMaxThead" ClassName="NODE" CanBeNULL="0"><Expression Seq="0" Status="">1</Expression></Parameter></USER_PARAMETERS>]]></UserParameters>
+		</Node>
+		<Node AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" NodeIndex="3" Code="DBRunParametricQuery" AN_ClassName="" AN_AlgorithmName="" TraceValue="0" L="64" R="448" T="354" B="433" DrawUniqueID="0" ShowLPDescriptions="1" ShowDescription="1" PrevHeight="31">
+			<Description/>
+			<TraceExpression/>
+			<TraceChannel/>
+			<UserParameters><![CDATA[<USER_PARAMETERS><Parameter Code="Conditions" ClassName="NODE" IsEXPList="1"/><Parameter Code="DBConfigurationName" ClassName="NODE" CanBeNULL="0"><Expression Seq="0" Status="">"defaultdsAPILog"</Expression></Parameter><Parameter Code="SQLName" ClassName="NODE" CanBeNULL="0"><Expression Seq="0" Status="">^INSERT INTO API_Log ([DataClassName], [ActiveTransactionID], [Last_ACRMReceivedTime], [ReceiveTime]) VALUES (?,?,?,?)^</Expression></Parameter></USER_PARAMETERS>]]></UserParameters>
+		</Node>
+		<Node AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" NodeIndex="4" Code="Synchronize" AN_ClassName="" AN_AlgorithmName="" TraceValue="1" L="430" R="590" T="462" B="477" DrawUniqueID="0" ShowLPDescriptions="1" ShowDescription="0" PrevHeight="31">
+			<Description/>
+			<TraceExpression><![CDATA[NodeObject.NodeAlgorithm.AlgorithmName + " error in run select: "+Err.AsMessageString]]></TraceExpression>
+			<TraceChannel><![CDATA[View\Explorer\Messages]]></TraceChannel>
+			<UserParameters/>
+		</Node>
+		<Node AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" NodeIndex="5" Code="TagToBeDeleted" AN_ClassName="" AN_AlgorithmName="" TraceValue="0" L="130" R="290" T="303" B="318" DrawUniqueID="0" ShowLPDescriptions="1" ShowDescription="0" PrevHeight="31">
+			<Description/>
+			<TraceExpression/>
+			<TraceChannel/>
+			<UserParameters/>
+		</Node>
+		<Node AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" NodeIndex="6" Code="Done" AN_ClassName="" AN_AlgorithmName="" TraceValue="0" L="176" R="336" T="516" B="531" DrawUniqueID="0" ShowLPDescriptions="1" ShowDescription="0" PrevHeight="31">
+			<Description/>
+			<TraceExpression/>
+			<TraceChannel/>
+			<UserParameters/>
+		</Node>
+	</Nodes>
+	<Relations>
+		<Relation AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" RelationIndex="18" FromNodeID="2" ToNodeID="5" FromLinkPointID="12" ToLinkPointID="10">
+			<PointsAsString><![CDATA[165 247 165 299 210 299 ]]></PointsAsString>
+		</Relation>
+		<Relation AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" RelationIndex="19" FromNodeID="3" ToNodeID="6" FromLinkPointID="14" ToLinkPointID="11">
+			<PointsAsString><![CDATA[256 437 256 437 256 512 ]]></PointsAsString>
+		</Relation>
+		<Relation AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" RelationIndex="20" FromNodeID="3" ToNodeID="4" FromLinkPointID="15" ToLinkPointID="9">
+			<PointsAsString><![CDATA[452 430 510 430 510 458 ]]></PointsAsString>
+		</Relation>
+		<Relation AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" RelationIndex="21" FromNodeID="4" ToNodeID="6" FromLinkPointID="16" ToLinkPointID="11">
+			<PointsAsString><![CDATA[510 481 510 512 256 512 ]]></PointsAsString>
+		</Relation>
+		<Relation AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" RelationIndex="22" FromNodeID="5" ToNodeID="3" FromLinkPointID="17" ToLinkPointID="8">
+			<PointsAsString><![CDATA[210 322 210 350 256 350 ]]></PointsAsString>
+		</Relation>
+		<Relation AlgorithmClassName="API_Data_GET" AlgorithmName="Create_API_Log" RelationIndex="23" FromNodeID="0" ToNodeID="2" FromLinkPointID="1" ToLinkPointID="7">
+			<PointsAsString><![CDATA[95 50 258 50 258 139 ]]></PointsAsString>
+		</Relation>
+	</Relations>
+</Algorithm>
