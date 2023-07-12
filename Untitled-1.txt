@@ -1,0 +1,513 @@
+{
+        {"ClassField",
+            {
+                {"FieldClassName", FieldType_XML::String},
+                {"FieldName", FieldType_XML::String},
+                {"ReturnType", FieldType_XML::Integer},
+                {"ReturnClassName", FieldType_XML::String},
+                {"ClientAccessType", FieldType_XML::Integer},
+                {"SupportsScenario", FieldType_XML::Integer},
+                {"DefaultValueExpression", FieldType_XML::CDATA},
+                {"DBFieldName", FieldType_XML::String},
+                {"ToBeReleased", FieldType_XML::Integer},
+                {"DBSynchronizationIsAllowed", FieldType_XML::Integer},
+                {"DBReturnType", FieldType_XML::Integer},
+                {"Length", FieldType_XML::Integer},
+                {"DBDefaultValue", FieldType_XML::CDATA},
+                {"DBIsPrimary", FieldType_XML::Integer},
+                {"DBIsMasterData", FieldType_XML::Integer},
+                {"SubReturnType", FieldType_XML::Integer},
+                {"InitialValueExpStr", FieldType_XML::CDATA},
+                {"EditMask", FieldType_XML::CDATA},
+                {"DisplayFormat", FieldType_XML::CDATA},
+                {"OnChangeExpStr", FieldType_XML::CDATA},
+                {"OptionsExpStr", FieldType_XML::CDATA},
+                {"VisibilityConditionExpStr", FieldType_XML::CDATA},
+                {"ErrorExpression", FieldType_XML::CDATA},
+                {"OptionIsMultiSelect", FieldType_XML::Integer},
+                {"ToolTip", FieldType_XML::CDATA},
+                {"GUITag", FieldType_XML::String},
+                {"ProcessTag", FieldType_XML::String},
+                {"ActionTag", FieldType_XML::String},
+                {"WEBDisplayFormat", FieldType_XML::CDATA},
+                {"WEBEditMask", FieldType_XML::CDATA},
+                {"FieldType_RO", FieldType_XML::Integer},
+                {"ObjectToolTip", FieldType_XML::CDATA},
+                {"ReleaseContextNames", FieldType_XML::CDATA},
+            }
+        },
+
+ 
+
+        {"ProductTour",
+            {
+                {"ProductTourName", FieldType_XML::String},
+                {"ContextCode", FieldType_XML::String},
+                {"Precondition", FieldType_XML::CDATA},
+                {"TourActivationType", FieldType_XML::Integer},
+                {"TourDisplayType", FieldType_XML::Integer},
+                {"TourPriority", FieldType_XML::Integer},
+                {"GUITag", FieldType_XML::String},
+                {"ProcessTag", FieldType_XML::String},
+                {"ActionTag", FieldType_XML::String}
+            }
+        },
+
+ 
+
+        {"ProductTourStep",
+            {
+                {"ProductTourName", FieldType_XML::String},
+                {"ProductTourStepIndex", FieldType_XML::Integer},
+                {"GUIElementCode", FieldType_XML::String},
+                {"HelpURL", FieldType_XML::CDATA},
+                {"GUITag", FieldType_XML::String},
+                {"ProcessTag", FieldType_XML::String},
+                {"ActionTag", FieldType_XML::String},
+            }
+        },
+
+ 
+
+        {"Algorithm",
+            {
+                {"AlgorithmClassName", FieldType_XML::String},
+                {"AlgorithmName", FieldType_XML::String},
+                {"Description", FieldType_XML::CDATA},
+                {"ReturnType", FieldType_XML::Integer},
+                {"ReturnValueClassName", FieldType_XML::String},
+                {"InputValues", FieldType_XML::CDATA},
+                {"BaseType", FieldType_XML::Integer},
+                {"AlgorithmType", FieldType_XML::Integer},
+                {"GUITag", FieldType_XML::String},
+                {"ProcessTag", FieldType_XML::String},
+                {"ActionTag", FieldType_XML::String},
+            }
+        },
+
+ 
+
+        {"AlgorithmLinkPoint",
+            {
+                {"AlgorithmClassName", FieldType_XML::String},
+                {"AlgorithmName", FieldType_XML::String},
+                {"LinkPointIndex", FieldType_XML::Integer},
+                {"AlgorithmNodeID", FieldType_XML::Integer},
+                {"Code", FieldType_XML::String},
+                {"LinkPointType", FieldType_XML::Integer},
+                {"DataType", FieldType_XML::Integer},
+                {"IteratorCode", FieldType_XML::String},
+                {"SubIteratorCode", FieldType_XML::String},
+                {"GroupName", FieldType_XML::String},
+                {"DirectlyConnectInputLPID", FieldType_XML::Integer},
+                {"LinkIndex", FieldType_XML::Integer},
+                {"MidX", FieldType_XML::Integer},
+                {"TopY", FieldType_XML::Integer},
+                {"GroupLinkIndex", FieldType_XML::Integer},
+                {"LPClassName", FieldType_XML::String},
+                {"RequiredClassName", FieldType_XML::String}
+            }
+        },
+
+ 
+
+        {"AlgorithmNode",
+            {
+                {"AlgorithmClassName", FieldType_XML::String},
+                {"AlgorithmName", FieldType_XML::String},
+                {"NodeIndex", FieldType_XML::Integer},
+                {"Code", FieldType_XML::String},
+                {"Description", FieldType_XML::CDATA},
+                {"AN_ClassName", FieldType_XML::String},
+                {"AN_AlgorithmName", FieldType_XML::String},
+                {"TraceValue", FieldType_XML::Integer},
+                {"TraceExpression", FieldType_XML::CDATA},
+                {"TraceChannel", FieldType_XML::CDATA},
+                {"L", FieldType_XML::Integer},
+                {"R", FieldType_XML::Integer},
+                {"T", FieldType_XML::Integer},
+                {"B", FieldType_XML::Integer},
+                {"DrawUniqueID", FieldType_XML::Integer},
+                {"ShowLPDescriptions", FieldType_XML::Integer},
+                {"ShowDescription", FieldType_XML::Integer},
+                {"PrevHeight", FieldType_XML::Integer},
+                {"UserParameters", FieldType_XML::CDATA}
+            }
+        },
+
+ 
+
+        {"AlgorithmRelation",
+            {
+                {"AlgorithmClassName", FieldType_XML::String},
+                {"AlgorithmName", FieldType_XML::String},
+                {"RelationIndex", FieldType_XML::Integer},
+                {"FromNodeID", FieldType_XML::Integer},
+                {"ToNodeID", FieldType_XML::Integer},
+                {"FromLinkPointID", FieldType_XML::Integer},
+                {"ToLinkPointID", FieldType_XML::Integer},
+                {"PointsAsString", FieldType_XML::CDATA}
+            }
+        },
+
+ 
+
+        {"AuthorizationData",
+            {
+                {"AuthorizationType", FieldType_XML::Integer},
+                {"ContextType", FieldType_XML::Integer},
+                {"ContextCode", FieldType_XML::String},
+                {"ResourceClassName", FieldType_XML::String},
+                {"ResourceCode", FieldType_XML::String},
+                {"AccessType", FieldType_XML::Integer},
+            }
+        },
+
+ 
+
+        {"AuthorizationPolicy",
+            {
+                {"AuthorizationType", FieldType_XML::Integer},
+                {"ResourceClassName", FieldType_XML::String},
+                {"AuthorizationIndex", FieldType_XML::Integer},
+                {"Expression", FieldType_XML::CDATA},
+                {"AccessType_Satisfied", FieldType_XML::Integer},
+                {"AccessType_Unsatisfied", FieldType_XML::Integer},
+            }
+        },
+
+ 
+
+        {"DataContext",
+            {
+                {"DataContextCode", FieldType_XML::String},
+                {"DataContextType", FieldType_XML::Integer},
+                {"GUITag", FieldType_XML::String},
+                {"ProcessTag", FieldType_XML::String},
+                {"ActionTag", FieldType_XML::String},
+            }
+        },
+
+ 
+
+        {"CalculatedField",
+            {
+                {"CalculatedFieldClassName", FieldType_XML::String},
+                {"CalculatedFieldName", FieldType_XML::String},
+                {"ClientExpression", FieldType_XML::CDATA},
+                {"ReturnType", FieldType_XML::Integer},
+                {"DisplayFormat", FieldType_XML::CDATA},
+                {"ToolTip", FieldType_XML::CDATA},
+                {"GUITag", FieldType_XML::String},
+                {"ProcessTag", FieldType_XML::String},
+                {"ActionTag", FieldType_XML::String},
+                {"WEBDisplayFormat", FieldType_XML::CDATA},
+                {"ObjectToolTip", FieldType_XML::CDATA},
+                {"SharedParticipants", FieldType_XML::CDATA},
+            }
+        },
+
+ 
+
+        {"ClassKeyBasedRelation",
+            {
+                {"ParentClassName", FieldType_XML::String},
+                {"ChildClassName", FieldType_XML::String},
+                {"ParentPrefix", FieldType_XML::String},
+                {"ChildPrefix", FieldType_XML::String},
+                {"KeyFieldsInParent", FieldType_XML::CDATA},
+                {"KeyFieldsInChild", FieldType_XML::CDATA},
+                {"ParentFilterExpStr", FieldType_XML::CDATA},
+                {"ChildFilterExpStr", FieldType_XML::CDATA},
+                {"ParentCardinality", FieldType_XML::Integer},
+                {"ChildCardinality", FieldType_XML::Integer},
+                {"IsAGroupRelation", FieldType_XML::Integer},
+                {"ParentClientAccessType", FieldType_XML::Integer},
+                {"ChildClientAccessType", FieldType_XML::Integer},
+                {"GUITag", FieldType_XML::String},
+                {"ProcessTag", FieldType_XML::String},
+                {"ActionTag", FieldType_XML::String},
+                {"ParentErrorExpStr", FieldType_XML::CDATA},
+                {"ChildErrorExpStr", FieldType_XML::CDATA},
+            }
+        },
+
+ 
+
+        {"ClassSettings",
+            {
+                {"SettingsClassName", FieldType_XML::String},
+                {"LibraryName", FieldType_XML::String},
+                {"ClassType", FieldType_XML::Integer},
+                {"PerPeriodParentClassName", FieldType_XML::String},
+                {"DBTableName", FieldType_XML::String},
+                {"ObjectLabelExpression", FieldType_XML::CDATA},
+                {"CanWriteObjectToDBExpression", FieldType_XML::CDATA},
+                {"AuthorizationLabelExpression", FieldType_XML::CDATA},
+                {"ObjectEditType", FieldType_XML::Integer},
+                {"DBSynchronizationType", FieldType_XML::Integer},
+                {"ErrorExpression", FieldType_XML::CDATA},
+                {"ObjectsAreTransient", FieldType_XML::Integer},
+                {"nMaxLiveObjects", FieldType_XML::Integer},
+                {"MaxAgeOfLiveObjects", FieldType_XML::Integer},
+                {"GUITag", FieldType_XML::String},
+                {"ProcessTag", FieldType_XML::String},
+                {"ActionTag", FieldType_XML::String},
+                {"DSName", FieldType_XML::String},
+                {"DBSynchronizationInterval", FieldType_XML::Integer},
+                {"DBSynchronizationFilter", FieldType_XML::CDATA},
+                {"ExtractDSName", FieldType_XML::String},
+                {"ClassType_ROH", FieldType_XML::Integer},
+                {"ClassType_BO", FieldType_XML::Integer},
+                {"DataContextCode", FieldType_XML::String},
+                {"MirrorDSName", FieldType_XML::String},
+                {"ReleaseFilter", FieldType_XML::CDATA},
+                {"ReleaseParentClassName", FieldType_XML::String},
+                {"SharedSchemaClassName", FieldType_XML::String},
+                {"ReleaseDataSet", FieldType_XML::String},
+            }
+        },
+
+ 
+
+        {"DecisionFilterData",
+            {
+                {"ProcessCode", FieldType_XML::String},
+                {"SourceProcessCode", FieldType_XML::String},
+                {"ClassName", FieldType_XML::String},
+                {"FieldName", FieldType_XML::String},
+                {"GUITag", FieldType_XML::String},
+                {"ProcessTag", FieldType_XML::String},
+                {"ActionTag", FieldType_XML::String},
+            }
+        },
+
+ 
+
+        {"Expression",
+            {
+                {"ExpressionClassName", FieldType_XML::String},
+                {"ExpressionName", FieldType_XML::String},
+                {"Expression", FieldType_XML::CDATA},
+                {"Condition", FieldType_XML::CDATA},
+                {"LazyExpressionSupportsScenario", FieldType_XML::Integer},
+                {"ClientAccessType", FieldType_XML::Integer},
+                {"ReturnType", FieldType_XML::Integer},
+                {"ReturnValueClassName", FieldType_XML::String},
+                {"ToBeReleased", FieldType_XML::Integer},
+                {"DisplayFormat", FieldType_XML::CDATA},
+                {"SubReturnType", FieldType_XML::Integer},
+                {"ToolTip", FieldType_XML::CDATA},
+                {"GUITag", FieldType_XML::String},
+                {"ProcessTag", FieldType_XML::String},
+                {"ActionTag", FieldType_XML::String},
+                {"WEBDisplayFormat", FieldType_XML::CDATA},
+                {"ObjectToolTip", FieldType_XML::CDATA},
+                {"ReleaseContextNames", FieldType_XML::CDATA},
+            }
+        },
+
+ 
+
+        {"ExternalData",
+            {
+                {"Path", FieldType_XML::String},
+                {"Type", FieldType_XML::String},
+                {"Name", FieldType_XML::String},
+                {"Data", FieldType_XML::CDATA},
+                {"Label", FieldType_XML::CDATA},
+                {"GUITag", FieldType_XML::String},
+                {"ProcessTag", FieldType_XML::String},
+                {"ActionTag", FieldType_XML::String},
+                {"SharedParticipants", FieldType_XML::CDATA},
+            }
+        },
+
+ 
+
+        {"IntervalRegistration",
+            {
+                {"ParentClassName", FieldType_XML::String},
+                {"ChildClassName", FieldType_XML::String},
+                {"IntervalManagerPrefix", FieldType_XML::String},
+                {"IntervalStartExpStr", FieldType_XML::CDATA},
+                {"IntervalEndExpStr", FieldType_XML::CDATA},
+                {"IntervalValueExpStr", FieldType_XML::CDATA},
+                {"IntervalRegisteredObjectExpStr", FieldType_XML::CDATA},
+                {"ParentObjectExpStr", FieldType_XML::CDATA},
+                {"ChildObjectsExpStr", FieldType_XML::CDATA},
+                {"IntervalManagerType", FieldType_XML::Integer},
+                {"NegateValue", FieldType_XML::Integer},
+                {"GUITag", FieldType_XML::String},
+                {"ProcessTag", FieldType_XML::String},
+                {"ActionTag", FieldType_XML::String},
+            }
+        },
+
+ 
+
+        {"Process",
+            {
+                {"ProcessCode", FieldType_XML::String},
+                {"Description", FieldType_XML::String},
+                {"ProcessCalendarCode", FieldType_XML::String},
+                {"SessionCreationType", FieldType_XML::Integer},
+                {"ParentProcessCode", FieldType_XML::String},
+                {"Duration", FieldType_XML::Integer},
+                {"ReferenceTimeType", FieldType_XML::Integer},
+                {"ReferenceTimeEXP", FieldType_XML::CDATA},
+                {"ExpectedStartTimeType", FieldType_XML::Integer},
+                {"ExpectedStartTimeEXP", FieldType_XML::CDATA},
+                {"SortingIndex", FieldType_XML::Integer},
+                {"ParentProcessCode_Scenario", FieldType_XML::String},
+                {"RequestHandleType", FieldType_XML::Integer},
+                {"GUITag", FieldType_XML::String},
+                {"ProcessTag", FieldType_XML::String},
+                {"ActionTag", FieldType_XML::String},
+                {"MaxAllowedLiveRequest", FieldType_XML::Integer},
+                {"DataContextCodes", FieldType_XML::CDATA},
+            }
+        },
+
+ 
+
+        {"ProcessCalendar",
+            {
+                {"ProcessCalendarCode", FieldType_XML::String},
+                {"GenerateFromDB", FieldType_XML::Integer},
+                {"StartTimeSnapMode", FieldType_XML::Integer},
+                {"StartTimeOffSet", FieldType_XML::Integer},
+                {"StartTimeOffSetTU", FieldType_XML::Integer},
+                {"CalendarLength", FieldType_XML::Integer},
+                {"CalendarLengthTU", FieldType_XML::Integer},
+                {"InterSessionLength", FieldType_XML::Integer},
+                {"InterSessionLengthTU", FieldType_XML::Integer},
+                {"TimeFormatString", FieldType_XML::CDATA},
+                {"GUITag", FieldType_XML::String},
+                {"ProcessTag", FieldType_XML::String},
+                {"ActionTag", FieldType_XML::String}
+            }
+        },
+
+ 
+
+        {"ProcessTimeFrameTemplate",
+            {
+                {"ProcessCode", FieldType_XML::String},
+                {"TimeFrameCode", FieldType_XML::String},
+                {"TimeFrameTemplateCode", FieldType_XML::String},
+                {"GUITag", FieldType_XML::String},
+                {"ProcessTag", FieldType_XML::String}
+            }
+        },
+
+ 
+
+        {"ProjectServer",
+            {
+               {"ServerCode", FieldType_XML::String},
+                {"BaseScenarioID", FieldType_XML::Integer},
+                {"ServerLabel", FieldType_XML::String},
+                {"ServerICON", FieldType_XML::String},
+                {"DBSyncInterval", FieldType_XML::Integer},
+                {"BackgroudSyncInterval", FieldType_XML::Integer},
+                {"UserCommandTimeout", FieldType_XML::Integer},
+                {"PlatformTimeout", FieldType_XML::Integer},
+                {"AdditionalParameters", FieldType_XML::CDATA},
+                {"BaseScenarioID_Organization", FieldType_XML::Integer}
+            }
+        },
+
+ 
+
+        {"ProjectSettings",
+            {
+                {"RecordID", FieldType_XML::Integer},
+                {"ExcludeLibraries", FieldType_XML::CDATA},
+                {"AdditionalDatasources", FieldType_XML::CDATA},
+                {"AdditionalParameters", FieldType_XML::CDATA}
+            }
+        },
+
+ 
+
+        {"StringMap",
+            {
+                {"Language", FieldType_XML::String},
+                {"Key", FieldType_XML::String},
+                {"Text", FieldType_XML::CDATA},
+                {"ActionTag", FieldType_XML::String},
+            }
+        },
+
+ 
+
+        {"Task",
+            {
+                {"Code", FieldType_XML::String},
+                {"AutoStart", FieldType_XML::Integer},
+                {"TaskExpStr", FieldType_XML::CDATA},
+                {"FirstFireTimeExpStr", FieldType_XML::CDATA},
+                {"NextFireTimeExpStr", FieldType_XML::CDATA},
+                {"GUITag", FieldType_XML::String},
+                {"ProcessTag", FieldType_XML::String},
+                {"ActionTag", FieldType_XML::String},
+                {"FireConditionExpStr", FieldType_XML::CDATA},
+            }
+        },
+
+ 
+
+        {"TimeFieldPPRelation",
+            {
+                {"ExTimeFieldClassName", FieldType_XML::String},
+                {"ExTimeObjPrefix", FieldType_XML::String},
+                {"PPObjPrefix", FieldType_XML::String},
+                {"ParentObjectForPPsExp", FieldType_XML::CDATA},
+                {"ExTimeStartFieldName", FieldType_XML::String},
+                {"ExTimeEndFieldName", FieldType_XML::String},
+                {"ExTimeObjFilterExpStr", FieldType_XML::CDATA},
+                {"PPObjFilterExpStr", FieldType_XML::CDATA},
+                {"ExTimeRelClientAccessType", FieldType_XML::Integer},
+                {"PPRelClientAccessType", FieldType_XML::Integer},
+                {"PPObjTimeFrameCodes", FieldType_XML::CDATA},
+                {"GUITag", FieldType_XML::String},
+                {"ProcessTag", FieldType_XML::String},
+                {"ActionTag", FieldType_XML::String},
+            }
+        },
+
+ 
+
+        {"TimeFrameTemplate",
+            {
+                {"TimeFrameTemplateCode", FieldType_XML::String},
+                {"TimeFrameTemplateDescription", FieldType_XML::CDATA},
+                {"Direction", FieldType_XML::Integer},
+                {"GUITag", FieldType_XML::String},
+                {"ProcessTag", FieldType_XML::String},
+                {"ActionTag", FieldType_XML::String},
+            }
+        },
+
+ 
+
+        {"TimeFrameTemplateSegment",
+            {
+                {"TimeFrameTemplateCode", FieldType_XML::String},
+                {"SegmentIndex", FieldType_XML::Integer},
+                {"StartTimeSnapMode", FieldType_XML::Integer},
+                {"StartTimeSnapOffSet", FieldType_XML::Integer},
+                {"StartTimeSnapOffSetTU", FieldType_XML::Integer},
+                {"PeriodLength", FieldType_XML::Integer},
+                {"PeriodLengthTU", FieldType_XML::Integer},
+                {"HorizonLength", FieldType_XML::Integer},
+                {"HorizonLengthUnit", FieldType_XML::Integer},
+                {"ContinuationMode", FieldType_XML::Integer},
+                {"TimeFormatString", FieldType_XML::CDATA},
+                {"GUITag", FieldType_XML::String},
+                {"ProcessTag", FieldType_XML::String},
+                {"ActionTag", FieldType_XML::String},
+            }
+        }
+    };
